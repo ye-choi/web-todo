@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web_todo</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h2 class="clock">00:00:00</h2>
+    <div class="weather">
+        <span></span>
+        <span></span>
+    </div>
+    <div class="quotes">
+        <span></span>
+        <span></span>
+    </div>
+
+    <form id="login-form" class="hidden">
+      <input
+        required
+        maxlength="15"
+        class="input-name"
+        type="text"
+        placeholder="이름을 입력하세요"
+      />
+      <button>로그인</button>
+    </form>
+    <h1 class="greeting hidden"></h1>
+    <form id="todo-form" class="hidden">
+        <input type="text" required placeholder="새로운 일정을 적고, Enter를 누르세요.">
+    </form>
+    <ul id="todo-list" class="hidden"></ul>
+
+    <!-- javascript -->
+    <script src="js/apikey.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/background.js"></script>
+  </body>
+</html>
